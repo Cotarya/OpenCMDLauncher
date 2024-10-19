@@ -1,6 +1,12 @@
 #include <iostream>
 
 int main() {
+	//Таймер перед запуском
+	int R = 0;
+	while (R > 100) {
+		std::cout << "До запуска " << R;
+		R--;
+	}
 	//Ставим русский язык
 	setlocale(LC_ALL, "RU");
 	//int это переменные простого типа
