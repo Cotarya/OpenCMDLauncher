@@ -2,7 +2,7 @@
 
 int main() {
 	//is running
-	for (int R = 0; R == 10; i++) {
+	for (int R = 0; R == 10; R++) {
 		std::cout << "До запуска " << R;
 	}
 	//Ставим русский язык
