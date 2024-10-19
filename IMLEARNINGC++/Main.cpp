@@ -1,6 +1,10 @@
 #include <iostream>
 
 int main() {
+	//is running
+	for (int R = 0; R == 10; i++) {
+		std::cout << "До запуска " << R;
+	}
 	//Ставим русский язык
 	setlocale(LC_ALL, "RU");
 	//int это переменные простого типа
@@ -31,5 +35,6 @@ int main() {
 	else {
 		std::cout << "Ошибка не правильно перезапускайте лаунчер";
 	}
-	return 0;
+	int RETURNING = 12;
+	return RETURNING;
 }
