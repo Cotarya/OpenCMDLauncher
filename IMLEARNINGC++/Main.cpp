@@ -1,10 +1,6 @@
 #include <iostream>
 
 int main() {
-	//is running
-	for (int R = 0; R == 10; R++) {
-		std::cout << "До запуска " << R;
-	}
 	//Ставим русский язык
 	setlocale(LC_ALL, "RU");
 	//int это переменные простого типа
