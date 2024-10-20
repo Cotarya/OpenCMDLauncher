@@ -1,4 +1,7 @@
 #include <iostream>
+#include <windows.h>
+#include <string>
+#include <cstdlib>
 using namespace std;
 
 int main() {
@@ -14,7 +17,7 @@ int main() {
 	int password[2];
 	// std::cout написать текст
 	cout << "Проверка доступа" << std::endl;
-	cout << "Если пишет 82941 значит ошибка" << std::endl ;
+	cout << "Если пишет 82941 значит ошибка" << std::endl;
 	//Здесь пока что всё время при запуске ошибка потом сделаю условие
 	//Меняем чтобы не было ошибки каждый запуск
 	//char здесь пока что не нужен но нужен будет bool
@@ -34,6 +37,7 @@ int main() {
 	if (isValid == true) {
 		cout << "Проверка пройдена ожидайте открытие или разблокировку доступа к чему либо Внимание этот лаунчер универсальный" << std::endl;
 		password[1] = 523;
+		system("Start C:\\CotaryaLauncherTest\\");
 		//523 это значит успешно
 	}
 	else {
