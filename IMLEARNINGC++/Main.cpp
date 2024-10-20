@@ -1,42 +1,44 @@
 #include <iostream>
+using namespace std;
 
 int main() {
 	//Таймер перед запуском
 	int R = 0;
 	while (R > 100) {
-		std::cout << "До запуска " << R;
-		R--;
+		cout << "До запуска " << R;
+		R++;
 	}
 	//Ставим русский язык
 	setlocale(LC_ALL, "RU");
 	//int это переменные простого типа
-	int password = 82941;
+	int password[2];
 	// std::cout написать текст
-	std::cout << "Проверка доступа" << std::endl;
-	std::cout << "Если пишет 82941 значит ошибка" << std::endl ;
+	cout << "Проверка доступа" << std::endl;
+	cout << "Если пишет 82941 значит ошибка" << std::endl ;
 	//Здесь пока что всё время при запуске ошибка потом сделаю условие
 	//Меняем чтобы не было ошибки каждый запуск
 	//char здесь пока что не нужен но нужен будет bool
 	bool isValid = false;
-	password = 0;
-	std::cout << "Введите код ";
-	std::cin >> password;
-	std::cout << "Считаем" << std::endl;
-	std::cout << "Дешифрование" << std::endl ;
-	if (password == 123 ) {
-		std::cout << "Ожидайте установки значения bool" << std::endl;
+	password[0] = 0;
+	cout << "Введите код ";
+	cin >> password[0];
+	cout << "Считаем" << std::endl;
+	if (password[0] == 123) {
+		cout << "Ожидайте установки значения bool" << std::endl;
 		isValid = true;
 	}
 	else {
-		std::cout << "Не правильно перезапускайте проверку НЕ ВСЕГДА ОШИБКА" << std::endl;
+		cout << "Не правильно перезапускайте проверку " << std::endl;
 		isValid = false;
 	}
-	if (isValid = true) {
-		std::cout << "Проверка пройдена ожидайте открытие или разблокировку доступа к чему либо Внимание этот лаунчер универсальный" << std::endl;
+	if (isValid == true) {
+		cout << "Проверка пройдена ожидайте открытие или разблокировку доступа к чему либо Внимание этот лаунчер универсальный" << std::endl;
+		password[1] = 523;
+		//523 это значит успешно
 	}
 	else {
-		std::cout << "Ошибка не правильно перезапускайте лаунчер";
+		cout << "Ошибка не правильно перезапускайте лаунчер";
+		password[1] = 82941;
 	}
-	int RETURNING = 12;
-	return RETURNING;
+	return password[1];
 }
